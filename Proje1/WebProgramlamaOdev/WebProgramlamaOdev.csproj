@@ -103,6 +103,7 @@
     <Content Include="theme\product-list.html" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
