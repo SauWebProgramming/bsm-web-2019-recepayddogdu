@@ -7,6 +7,6 @@ namespace WebProgramlamaOdev.Entity
 {
     public class Product
     {
-      
+        public int Id { get; set; }
     }
 }
