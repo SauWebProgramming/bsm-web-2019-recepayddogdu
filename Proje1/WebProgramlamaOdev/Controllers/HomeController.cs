@@ -13,5 +13,11 @@ namespace WebProgramlamaOdev.Controllers
         {
             return View();
         }
+
+        public ActionResult Details()
+        {
+            return View();
+        }
+
     }
 }
