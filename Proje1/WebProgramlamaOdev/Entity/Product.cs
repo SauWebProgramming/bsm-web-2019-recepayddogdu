@@ -12,6 +12,7 @@ namespace WebProgramlamaOdev.Entity
         public string Description { get; set; }
         public double Price { get; set; }
         public int Stock { get; set; }
+        public string Image { get; set; }
         public bool IsHome{ get; set; }
         public bool IsApproved { get; set; }
 
