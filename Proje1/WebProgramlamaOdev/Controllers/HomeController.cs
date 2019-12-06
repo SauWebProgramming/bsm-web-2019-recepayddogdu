@@ -13,9 +13,26 @@ namespace WebProgramlamaOdev.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            
-            return View(_context.Products.Where(i=>i.IsHome&& i.IsApproved).ToList()); 
+            var urunler=_context.Products
+                .Where(i=>i.IsHome&&i.IsApproved)
+                .Select(i=>new ProductModel()
+                {
+                    Id=i.Id,
+                    Name=i.Name,
+                    Description=i.Description.Length>50?i.Description.Substring(0,47)+"....":i.Description,
+                    Price=i.Price,
+                    Stock=i.Stock,
+                    Image=i.Image,
+                    CategoryId=i.CategoryId
 
+            }).ToList();
+            return View(urunler);
+
+        }
+
+        private void ToList()
+        {
+            throw new NotImplementedException();
         }
 
         public ActionResult Details(int id)
@@ -28,5 +45,20 @@ namespace WebProgramlamaOdev.Controllers
             return View(_context.Products.Where(i => i.IsApproved).ToList());
         }
 
+    }
+
+    internal class ProductModel
+    {
+        public ProductModel()
+        {
+        }
+
+        public int Id { get; internal set; }
+        public string Name { get; internal set; }
+        public string Description { get; internal set; }
+        public double Price { get; internal set; }
+        public int Stock { get; internal set; }
+        public int CategoryId { get; internal set; }
+        public string Image { get; internal set; }
     }
 }
