@@ -5,37 +5,44 @@
 }
 
 <div class="jumbotron">
-
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="container">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
 </div>
-<div class="row">
+
+<div class="container pb-5">
+    <div class="row">
     
    
 
-    @foreach (var urun in Model)
-    {
+        @foreach (var urun in Model)
+        {
         
-        <div class="col-md-4">
-            <div class="card">
-                <img  src="holder.js/100px160/" class="card-img-top" alt="@urun.Name">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="/Home/Details/@urun.Id">@urun.Name</a>
-                    </h4>
-                    <p class="card-text">@urun.Description</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">@urun.Price</small>
+            <div class="col-md-4">
+                <div class="card">
+                    <img  src="holder.js/100px160/" class="card-img-top" alt="@urun.Name">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="/Home/Details/@urun.Id">@urun.Name</a>
+                        </h4>
+                        <p class="card-text">@urun.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">@urun.Price</small>
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
         
+    </div>
 </div>
+
+
+
 
 
 

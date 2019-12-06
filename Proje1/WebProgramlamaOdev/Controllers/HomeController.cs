@@ -14,13 +14,13 @@ namespace WebProgramlamaOdev.Controllers
         public ActionResult Index()
         {
             
-            return View(_context.Products.Where(i=>i.IsHome&& i.IsApproved).ToList());
+            return View(_context.Products.Where(i=>i.IsHome&& i.IsApproved).ToList()); 
 
         }
 
         public ActionResult Details(int id)
         {
-            return View(_context.Products.Where(i => i.Id==id).ToList());
+            return View(_context.Products.Where(i => i.Id==id).FirstOrDefault());
         }
 
         public ActionResult List()
