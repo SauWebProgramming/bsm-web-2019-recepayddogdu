@@ -18,8 +18,8 @@ namespace WebProgramlamaOdev.Controllers
                 .Select(i=>new ProductModel()
                 {
                     Id=i.Id,
-                    Name=i.Name,
-                    Description=i.Description.Length>50?i.Description.Substring(0,47)+"....":i.Description,
+                    Name=i.Name.Length > 30 ? i.Name.Substring(0, 27) + "..." : i.Name,
+                    Description=i.Description.Length>50?i.Description.Substring(0,47)+"...":i.Description,
                     Price=i.Price,
                     Stock=i.Stock,
                     Image=i.Image ?? "1.jpg",
