@@ -13,6 +13,9 @@
     height: 34px;
 }
 
+.card-text {
+    font-size:12px;
+}
 
 #write-review {
     margin-left: -50px;

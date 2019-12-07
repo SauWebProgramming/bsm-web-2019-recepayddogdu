@@ -28,9 +28,9 @@ namespace WebProgramlamaOdev.Entity
 
             var urunler=new List<Product>()
             {
-                new Product(){Name = "Canon Eos 1200D Yüksek Kaliteli Fotoğraf Makinesi",Description ="Canon eos 1200d Fotoğraf Makinesi. Kullanması çok keyiflidir.", Price=1200,Stock=100,IsApproved=true,CategoryId=1,IsHome=true, Image = "1.jpg"},
+                new Product(){Name = "Canon Eos 1200D ",Description ="Canon eos 1200d Fotoğraf Makinesi. Kullanması çok keyiflidir.", Price=1200,Stock=100,IsApproved=true,CategoryId=1,IsHome=true, Image = "1.jpg"},
                 new Product(){Name = "Canon 4000D 18-55 MM III ",Description ="Canon 4000D 18-55 MM III Fotoğraf Makinesi Kullanması çok keyiflidir.", Price=600,Stock=300,IsApproved=true,CategoryId=1,IsHome=true, Image = "2.jpg"},
-                new Product(){Name = "Fujifilm X100F Aynasız Fotoğraf Makinesi Kullanması çok keyiflidir.",Description ="SIFIR", Price=800,Stock=100,IsApproved=false,CategoryId=1,IsHome=true, Image = "3.jpg"},
+                new Product(){Name = "Fujifilm X100F ",Description ="SIFIR", Price=800,Stock=100,IsApproved=false,CategoryId=1,IsHome=true, Image = "3.jpg"},
                 new Product(){Name = "Canon Eos 600D",Description ="SIFIR, Kullanması çok keyiflidir.", Price=800,Stock=50,IsApproved=true,CategoryId=1,IsHome=true, Image = "4.jpg"},
                 new Product(){Name = "Nikon D3200",Description ="SIFIR, Kullanması çok keyiflidir.", Price=1200,Stock=500,IsApproved=false,CategoryId=1, Image = "5.jpg"},
 
@@ -39,7 +39,7 @@ namespace WebProgramlamaOdev.Entity
                 new Product(){Name = "DELL GS65 STEALTH",Description ="NVIDIA GeForce RTX, laptopta nihai oyun deneyimini yaşamanızı sağlayacak.", Price=4000,Stock=0,IsApproved=false,CategoryId=2, Image = "3.jpg"},
                 new Product(){Name = "CASPER GS65 STEALTH",Description ="NVIDIA GeForce RTX, laptopta nihai oyun deneyimini yaşamanızı sağlayacak.", Price=3200,Stock=100,IsApproved=true,CategoryId=2, Image = "4.jpg"},
                     
-                new Product(){Name = "GRUNDIG 32VLE5730 32 80 CM FHD LED TV,DAHİLİ UYDU ALICI ",Description ="32 80 CM FHD LED TV,DAHİLİ UYDU ALICI", Price=1200,Stock=100,IsApproved=true,CategoryId=3, Image = "1.jpg"},
+                new Product(){Name = "GRUNDIG 32VLE5730  ",Description ="32 80 CM FHD LED TV,DAHİLİ UYDU ALICI", Price=1200,Stock=100,IsApproved=true,CategoryId=3, Image = "1.jpg"},
                 new Product(){Name = "VESTEL 32VLE5730",Description ="32 80 CM FHD LED TV,DAHİLİ UYDU ALICI", Price=1200,Stock=100,IsApproved=true,CategoryId=3,IsHome=true, Image = "2.jpg"},
                 new Product(){Name = "SAMSUNG 32VLE5730D",Description ="32 80 CM FHD LED TV,DAHİLİ UYDU ALICI", Price=1200,Stock=100,IsApproved=true,CategoryId=3,IsHome=true, Image = "3.jpg"},
                 new Product(){Name = "LG 32VLE5730",Description ="32 80 CM FHD LED TV,DAHİLİ UYDU ALICI", Price=1200,Stock=100,IsApproved=true,CategoryId=3, Image = "4.jpg"},
