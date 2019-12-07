@@ -22,7 +22,7 @@ namespace WebProgramlamaOdev.Controllers
                     Description=i.Description.Length>50?i.Description.Substring(0,47)+"....":i.Description,
                     Price=i.Price,
                     Stock=i.Stock,
-                    Image=i.Image,
+                    Image=i.Image ?? "1.jpg",
                     CategoryId=i.CategoryId
 
             }).ToList();
@@ -42,12 +42,25 @@ namespace WebProgramlamaOdev.Controllers
 
         public ActionResult List()
         {
-            return View(_context.Products.Where(i => i.IsApproved).ToList());
+            var urunler = _context.Products
+                .Where(i => i.IsApproved)
+                .Select(i => new ProductModel()
+                {
+                    Id = i.Id,
+                    Name = i.Name,
+                    Description = i.Description.Length > 50 ? i.Description.Substring(0, 47) + "...." : i.Description,
+                    Price = i.Price,
+                    Stock = i.Stock,
+                    Image = i.Image,
+                    CategoryId = i.CategoryId
+
+                }).ToList();
+            return View(urunler);
         }
 
     }
 
-    internal class ProductModel
+    public class ProductModel
     {
         public ProductModel()
         {
