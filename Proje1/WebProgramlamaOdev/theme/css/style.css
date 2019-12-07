@@ -5,17 +5,9 @@
     height: 100%;
 }
 
-.card-title {
-    font-size: 16px;
-    font-weight: 400;
-    color: #484848;
-    line-height: 1.35em;
-    height: 34px;
-}
 
-.card-text {
-    font-size:12px;
-}
+
+
 
 #write-review {
     margin-left: -50px;
