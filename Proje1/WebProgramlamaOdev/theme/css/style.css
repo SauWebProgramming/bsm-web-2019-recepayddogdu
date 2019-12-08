@@ -32,7 +32,10 @@
 {
     font-size: 28px;
     color:red;
-}
+}#product-details h1{
+     font-size:20px;
+     font-weight:700;
+ }
 
 
 /* Sticky footer styles
