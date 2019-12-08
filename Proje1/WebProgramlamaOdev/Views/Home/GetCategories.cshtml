@@ -1,10 +1,16 @@
 ﻿@model IEnumerable<WebProgramlamaOdev.Entity.Category>
 <ul class="list-group">
+    <li class="list-group-item " >
+        <a href="/Home/List">
+            <i class="fas fa-arrow-alt-circle-down" ></i>
+            Tüm Kategoriler
+        </a>
+        </li>
     @foreach (var item in Model)
     {
-        <li class="list-group-item ">
+        <li class="list-group-item  ">
             <a href="/Home/List/@item.Id">
-                <i class="fas fa-arrow-circle-right" ;"></i>
+                <i class="fas fa-arrow-circle-right" ></i>
                 @item.Name
             </a>
         </li>

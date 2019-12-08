@@ -10,6 +10,23 @@
         </div>
 
         <div class="col-md-9">
+
+            @if (Model.Count() == 0)
+            {
+                <div class="alert alert-danger" role="alert">
+                    <i class="fas fa-exclamation-circle" ></i>
+                    Bu Kategoride bir ürün bulunamadı.
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-secondary" role="alert">
+                   
+                    <i class="fas fa-check-square" ></i>
+                    <strong>@Model.Count()</strong> adet ürün bulundu.
+                </div>
+            }
+
             @Html.Partial("_ProductList", Model)
         </div>
     </div>

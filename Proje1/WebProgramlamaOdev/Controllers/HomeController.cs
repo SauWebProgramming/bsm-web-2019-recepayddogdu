@@ -40,7 +40,7 @@ namespace WebProgramlamaOdev.Controllers
             return View(_context.Products.Where(i => i.Id==id).FirstOrDefault());
         }
 
-        public ActionResult List()
+        public ActionResult List(int? id)
         {
             var urunler = _context.Products
                 .Where(i => i.IsApproved)
@@ -51,11 +51,17 @@ namespace WebProgramlamaOdev.Controllers
                     Description = i.Description.Length > 50 ? i.Description.Substring(0, 47) + "...." : i.Description,
                     Price = i.Price,
                     Stock = i.Stock,
-                    Image = i.Image,
+                    Image = i.Image ??"1.jpg",
                     CategoryId = i.CategoryId
 
-                }).ToList();
-            return View(urunler);
+                }).AsQueryable();
+
+            if(id!=null)
+            {
+                urunler = urunler.Where(i => i.CategoryId == id);
+            }
+
+            return View(urunler.ToList());
         }
 
         public PartialViewResult GetCategories()
