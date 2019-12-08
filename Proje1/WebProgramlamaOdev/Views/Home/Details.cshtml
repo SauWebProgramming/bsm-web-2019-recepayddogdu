@@ -21,7 +21,19 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <span class="badge badge-primary">In Stock</span>
+
+
+                    @if (Model.IsApproved)
+                    {
+                        <span class="badge badge-primary">Stokta</span>
+                    }
+                    else
+                    { 
+                        <span class="badge badge-danger">Stokta Yok</span>
+                    }
+
+
+
                     <span class="product-number">#123456</span>
                 </div>
             </div>

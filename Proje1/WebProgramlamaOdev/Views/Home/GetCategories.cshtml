@@ -1,0 +1,12 @@
+﻿@model IEnumerable<WebProgramlamaOdev.Entity.Category>
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item ">
+            <a href="/Home/List/@item.Id">
+                @item.Name
+            </a>
+        </li>
+    }
+</ul>
+

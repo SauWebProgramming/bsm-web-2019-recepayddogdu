@@ -58,13 +58,18 @@ namespace WebProgramlamaOdev.Controllers
             return View(urunler);
         }
 
+        public PartialViewResult GetCategories()
+        {
+            return PartialView(_context.Categories.ToList());
+        }
+
     }
+
+
 
     public class ProductModel
     {
-        public ProductModel()
-        {
-        }
+
 
         public int Id { get; internal set; }
         public string Name { get; internal set; }
@@ -74,4 +79,5 @@ namespace WebProgramlamaOdev.Controllers
         public int CategoryId { get; internal set; }
         public string Image { get; internal set; }
     }
+
 }
