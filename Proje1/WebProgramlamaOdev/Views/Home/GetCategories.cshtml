@@ -1,19 +1,54 @@
 ﻿@model IEnumerable<WebProgramlamaOdev.Entity.Category>
-<ul class="list-group">
-    <li class="list-group-item " >
-        <a href="/Home/List">
+@{ 
+    var selectedCategory = Url.RequestContext.RouteData.Values["id"];
+}
+
+
+   
+        <a href="/Home/List" class="list-group-item ">
             <i class="fas fa-arrow-alt-circle-down" ></i>
             Tüm Kategoriler
         </a>
-        </li>
+       
+
     @foreach (var item in Model)
     {
-        <li class="list-group-item  ">
-            <a href="/Home/List/@item.Id">
-                <i class="fas fa-arrow-circle-right" ></i>
-                @item.Name
-            </a>
-        </li>
+        if (selectedCategory != null)
+        {
+            if (item.Id == int.Parse((selectedCategory.ToString())))
+            {
+                //seçilen kategori ile route id si birbirine eşit.
+
+                
+                    <a href="/Home/List/@item.Id" class="list-group-item active ">
+                        <i class="fas fa-arrow-circle-right"></i>
+                        @item.Name
+                    </a>
+
+            }
+            else
+            {
+
+                <a href="/Home/List/@item.Id" class="list-group-item  ">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    @item.Name
+                </a>
+            }
+        }
+        else
+        {
+
+           
+                <a href="/Home/List/@item.Id" class="list-group-item  ">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    @item.Name
+                </a>
+           
+        }
+
+
+
+    
     }
-</ul>
+
 
