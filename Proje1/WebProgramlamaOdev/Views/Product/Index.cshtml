@@ -2,13 +2,14 @@
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="container pb-5">
-    <h2>Yeni Ürün</h2>
+    <h2>Ürünler</h2>
 
     <p>
-        @Html.ActionLink("Yeni Ürün", "Create",null,new {@class="btn btn-primary"})
+        @Html.ActionLink("Yeni Ürün", "Create",null,new {@class="btn btn-success"})
     </p>
     <table class="table table-bordered table-striped">
         <tr>
