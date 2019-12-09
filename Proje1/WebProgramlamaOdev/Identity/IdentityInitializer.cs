@@ -47,7 +47,7 @@ namespace WebProgramlamaOdev.Identity
                 var manager = new UserManager<ApplicationUser>(store);
                 var user = new ApplicationUser() { Name = "recep", Surname = "aydogdu",UserName = "recepaydogdu", Email = "recepayddogdu@gmail.com" };
                 manager.Create(user, "1234567");
-                manager.AddToRole(user.Id, "admin");
+                
                 manager.AddToRole(user.Id, "user");
             }
 
