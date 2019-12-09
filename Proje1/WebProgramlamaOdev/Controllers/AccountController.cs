@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using WebProgramlamaOdev.Identity;
+using Microsoft.Owin.Security;
+using WebProgramlamaOdev.IdentityInitializer;
 using WebProgramlamaOdev.Models;
 
 namespace WebProgramlamaOdev.Controllers
@@ -50,9 +51,9 @@ namespace WebProgramlamaOdev.Controllers
                 if (result.Succeeded)
                 {
                     //Kullanici olustu ve kullaniciyi bir role atayabilirsiniz.
-                    if (RoleManager.RoleExists("User"))
+                    if (RoleManager.RoleExists("user"))
                     {
-                        UserManager.AddToRole(user.Id, "User");
+                        UserManager.AddToRole(user.Id, "user");
                     }
 
                     return RedirectToAction("Login", "Account");
@@ -64,7 +65,7 @@ namespace WebProgramlamaOdev.Controllers
 
             }
 
-            return View();
+            return View(model);
         }
 
 
@@ -90,11 +91,28 @@ namespace WebProgramlamaOdev.Controllers
                     //Varolan kullaniciyi sisteme dahil et.
                     // ApplicationCookie olusturup sisteme birak.
                     var authManager = HttpContext.GetOwinContext().Authentication;
+                    var identityclaims = UserManager.CreateIdentity(user, "ApplicationCookie");
+                    var authProperties = new AuthenticationProperties();
+                    authProperties.IsPersistent = model.RememberMe;
+                    authManager.SignIn(authProperties, identityclaims);
+
+                    return RedirectToAction("Index", "Home");
                }
+                else
+                {
+                    ModelState.AddModelError("LoginUserError", "Kullanıcı Bulunamadı.");
+                }
 
             }
 
-            return View();
+            return View(model);
+        }
+
+        public ActionResult Logout()
+        {
+            var authManager = HttpContext.GetOwinContext().Authentication;
+            authManager.SignOut();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

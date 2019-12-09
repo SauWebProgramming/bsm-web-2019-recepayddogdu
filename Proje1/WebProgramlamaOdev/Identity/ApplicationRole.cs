@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace WebProgramlamaOdev.Identity
+namespace WebProgramlamaOdev.IdentityInitializer
 {
     public class ApplicationRole:IdentityRole
     {

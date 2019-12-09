@@ -19,6 +19,6 @@ namespace WebProgramlamaOdev.Models
 
         
         [DisplayName("Beni Hatırla")]
-        public string RememberMe { get; set; }
+        public bool RememberMe { get; set; }
     }
 }
