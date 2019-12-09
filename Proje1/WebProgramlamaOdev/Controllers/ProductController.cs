@@ -10,6 +10,7 @@ using WebProgramlamaOdev.Entity;
 
 namespace WebProgramlamaOdev.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class ProductController : Controller
     {
         private DataContext db = new DataContext();

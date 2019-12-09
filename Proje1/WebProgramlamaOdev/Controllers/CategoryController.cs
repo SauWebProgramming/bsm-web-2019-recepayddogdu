@@ -9,7 +9,9 @@ using System.Web.Mvc;
 using WebProgramlamaOdev.Entity;
 
 namespace WebProgramlamaOdev.Controllers
+
 {
+    [Authorize(Roles="admin")]
     public class CategoryController : Controller
     {
         private DataContext db = new DataContext();
