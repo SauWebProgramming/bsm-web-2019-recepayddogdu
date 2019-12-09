@@ -17,7 +17,7 @@ namespace WebProgramlamaOdev.Entity
 
         [DisplayName("Açıklama")]
         public string Description { get; set; }
-
+            
         public List<Product> Products { get; set; }
     }
 }

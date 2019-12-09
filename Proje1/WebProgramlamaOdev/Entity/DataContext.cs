@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using Microsoft.AspNet.Identity.EntityFramework;
+using WebProgramlamaOdev.Identity;
 
 namespace WebProgramlamaOdev.Entity
 {
