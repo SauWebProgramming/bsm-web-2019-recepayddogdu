@@ -8,7 +8,7 @@ namespace WebProgramlamaOdev.Models
 {
     public class Cart
     {
-        private List<CartLine>_cardLines=new List<CartLine>();
+        private List<CartLine> _cardLines = new List<CartLine>();
 
         public List<CartLine> CartLines
         {
@@ -17,11 +17,10 @@ namespace WebProgramlamaOdev.Models
 
         public void AddProduct(Product product, int quantity)
         {
-
             var line = _cardLines.FirstOrDefault(i => i.Product.Id == product.Id);
-            if (line==null)
+            if (line == null)
             {
-                _cardLines.Add(new CartLine(){Product = product,Quantity=quantity});
+                _cardLines.Add(new CartLine() { Product = product, Quantity = quantity });
             }
             else
             {
