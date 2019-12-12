@@ -8,7 +8,7 @@ namespace WebProgramlamaOdev.Models
 {
     public class ShippingDetails
     {
-        public string FullName { get; set; }
+        public string UserName { get; set; }
 
         [Required(ErrorMessage = "Lütfen adres tanımını giriniz.")]
         public string AdresBasligi { get; set; }

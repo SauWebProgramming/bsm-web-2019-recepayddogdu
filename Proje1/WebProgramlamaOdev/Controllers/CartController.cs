@@ -74,7 +74,7 @@ namespace WebProgramlamaOdev.Controllers
 
             if (ModelState.IsValid)
             {
-                //SİPARİŞİ VERİTABANINA KAYDET
+                SaveOrder(cart, entity);  //SİPARİŞİ VERİTABANINA KAYDET
                 //CART'I SIFIRLA
                 cart.Clear();
                 return View("Completed");
@@ -87,5 +87,35 @@ namespace WebProgramlamaOdev.Controllers
             return View();
         }
 
+        private void SaveOrder(Cart cart, ShippingDetails entity)
+        {
+            var order = new Order();
+
+            order.OrderNumber = "A" + (new Random()).Next(11111, 99999).ToString();
+            order.Total = cart.Total();
+            order.OrderDate = DateTime.Now;
+            order.Username = User.Identity.Name;
+
+            order.AdresBasligi = entity.AdresBasligi;
+            order.Adres = entity.Adres; 
+            order.Sehir = entity.Sehir;
+            order.Semt = entity.Semt;
+            order.Mahalle = entity.Mahalle;
+            order.PostaKodu = entity.PostaKodu;
+
+            order.Orderlines = new List<OrderLine>();
+
+            foreach (var pr in cart.CartLines)
+            {
+                var orderline = new OrderLine();
+                orderline.Quantity = pr.Quantity;
+                orderline.Price = pr.Quantity * pr.Product.Price;
+                orderline.ProductId = pr.Product.Id;
+
+                order.Orderlines.Add(orderline);
+            }
+            db.Orders.Add(order);
+            db.SaveChanges();
+        }
     }
 }

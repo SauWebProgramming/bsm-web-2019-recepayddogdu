@@ -11,8 +11,11 @@
 
 <ul class="navbar-nav  my-2 my-lg-0">
     <li id="cart" class="nav-item">
-        <i class="fa fa-cart-plus" ></i> 
-        (@Model.CartLines.Count)
+        <a class="nav-link" href="/Cart">
+            <i class="fa fa-cart-plus"></i>
+            (@Model.CartLines.Count)
+        </a>
+        
     </li>
 
 </ul>

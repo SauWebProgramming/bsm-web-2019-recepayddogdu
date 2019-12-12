@@ -39,9 +39,11 @@
                 @Html.ValidationSummary()
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Ad Soyad</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
                     <div class="col-sm-6">
-                        @Html.TextBoxFor(x => x.FullName, new { @class = "form-control" })
+                        <span class="badge badge-danger" style="font-size: 14px;">
+                            @User.Identity.Name
+                        </span>
                     </div>
                 </div>
 
@@ -90,7 +92,7 @@
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
                     <div class="col-sm-6">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-success">Siparişi Onayla</button>
                     </div>
                 </div>
 
