@@ -3,27 +3,48 @@
 @model WebProgramlamaOdev.Models.OrderDetailsModel
 @{
     ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-@*account details *@
+
+
+@*Order details *@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
 
             <h2>Sipariş Detay Bilgileri</h2>
             <hr />
+            @if (TempData["message"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["message"]
+                </div>
+            }
 
             <dl class="row">
 
+
+                <dt class="col-sm-3">Username</dt>
+                <dd class="col-sm-9">@Model.UserName
+                <dd>
+
                 <dt class="col-sm-3">Order State</dt>
-                <dd class="col-sm-9">
-                    @if (Model.OrderState == EnumOrderState.Waiting)
+                <dd class="col-sm-9"> 
+
+                    @using (Html.BeginForm("UpdateOrderState", "Order", FormMethod.Post))
                     {
-                        <span class="badge-danger">Onay Bekliyor</span>
+                        @Html.HiddenFor(i => i.OrderId)
+
+                        <dl class="row">
+                            <dt class="col-sm-8">
+                                @Html.EnumDropDownListFor(i => i.OrderState, "Select Order State", new { @class = "form-control" })
+                            </dt>
+                            <dd class="col-sm-4">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </dd>
+                        </dl>
                     }
-                    else if (Model.OrderState == EnumOrderState.Completed)
-                    {
-                        <span class="badge-success">Sipariş Tamamlandı.</span>
-                    }
+
                 </dd>
 
                 <dt class="col-sm-3">Order Id</dt>
@@ -101,4 +122,3 @@
         </div>
     </div>
 </div>
-
