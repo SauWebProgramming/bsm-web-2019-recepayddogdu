@@ -83,8 +83,6 @@ namespace WebProgramlamaOdev.Controllers
             {
                 return View(entity);
             }
-           
-            return View();
         }
 
         private void SaveOrder(Cart cart, ShippingDetails entity)
@@ -94,7 +92,9 @@ namespace WebProgramlamaOdev.Controllers
             order.OrderNumber = "A" + (new Random()).Next(11111, 99999).ToString();
             order.Total = cart.Total();
             order.OrderDate = DateTime.Now;
+            order.OrderState = EnumOrderState.Waiting;
             order.Username = User.Identity.Name;
+
 
             order.AdresBasligi = entity.AdresBasligi;
             order.Adres = entity.Adres; 
