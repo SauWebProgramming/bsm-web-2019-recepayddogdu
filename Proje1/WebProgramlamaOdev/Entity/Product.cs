@@ -15,8 +15,13 @@ namespace WebProgramlamaOdev.Entity
 
         [DisplayName("Ürün Açıklaması")]
         public string Description { get; set; }
+
+        [DisplayName("Fiyat")]
         public double Price { get; set; }
+        [DisplayName("Stok")]
         public int Stock { get; set; }
+
+        
         public string Image { get; set; }
         public bool IsHome{ get; set; }
         public bool IsApproved { get; set; }

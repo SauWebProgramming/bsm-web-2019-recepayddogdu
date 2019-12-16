@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 
@@ -29,16 +30,17 @@ namespace WebProgramlamaOdev.Entity
 
     public class OrderLine
     {
-
+        
         public int Id { get; set; }
 
         public int OrderId { get; set; }
         public virtual Order Order { get; set; }
 
+        [DisplayName("Miktar")]
         public int Quantity { get; set; }
-
+        [DisplayName("Fiyat")]
         public double Price { get; set; }
-
+        [DisplayName("ÜrünId")]
         public int ProductId { get; set; }
 
 

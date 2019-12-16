@@ -47,19 +47,19 @@
 
                 </dd>
 
-                <dt class="col-sm-3">Order Id</dt>
+                <dt class="col-sm-3">Sipariş Id</dt>
                 <dd class="col-sm-9">@Model.OrderId</dd>
 
-                <dt class="col-sm-3">Order Number</dt>
+                <dt class="col-sm-3">Sipariş Numarası</dt>
                 <dd class="col-sm-9">@Model.OrderNumber</dd>
 
-                <dt class="col-sm-3">Total</dt>
+                <dt class="col-sm-3">Tutar</dt>
                 <dd class="col-sm-9">
                     <i class="fa fa-try" aria-hidden="true"></i>
                     @Model.Total
                 </dd>
 
-                <dt class="col-sm-3">Order Date</dt>
+                <dt class="col-sm-3">Sipariş Tarihi</dt>
                 <dd class="col-sm-9">@Model.OrderDate</dd>
 
 
@@ -74,16 +74,16 @@
                     @Model.PostaKodu
                 </dd>
 
-                <dt class="col-sm-3">Products</dt>
+                <dt class="col-sm-3">Ürünler</dt>
                 <dd class="col-sm-9">
                     <table class="table table-bordered">
 
                         <thead>
                             <tr>
                                 <th>Image</th>
-                                <th style="width: 45%;">Product Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
+                                <th style="width: 45%;">Ürün Adı</th>
+                                <th>Miktar</th>
+                                <th>Fiyat</th>
                                 <th style="width: 10%;"></th>
                             </tr>
                         </thead>
@@ -108,7 +108,7 @@
                                     <td>
                                         <a href="/Home/Details/@item.ProductId" class="btn btn-primary btn-sm" target="_blank">
                                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                            Product Details
+                                            Ürün Detay
                                         </a>
                                     </td>
                                 </tr>

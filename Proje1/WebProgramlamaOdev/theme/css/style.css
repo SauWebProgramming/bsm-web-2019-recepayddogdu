@@ -1,5 +1,6 @@
 .jumbotron {
-    background-image: url("../img/inci.jpg");
+    
+    background-image: url("../img/jumbotron.jpg");
     background-size: cover;
     height: 100%;
 }
