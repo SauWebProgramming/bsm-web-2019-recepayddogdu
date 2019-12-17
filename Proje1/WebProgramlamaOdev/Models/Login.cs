@@ -15,6 +15,7 @@ namespace WebProgramlamaOdev.Models
 
         [Required]
         [DisplayName("Parola")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
         

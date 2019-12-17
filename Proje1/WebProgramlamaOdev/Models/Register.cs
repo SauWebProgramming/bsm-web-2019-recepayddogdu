@@ -28,10 +28,14 @@ namespace WebProgramlamaOdev.Models
 
         [Required]
         [DisplayName("Parola")]
+        [DataType(DataType.Password)]
+
         public string Password { get; set; }
 
         [Required]
         [DisplayName("Parola Tekrar")]
+        [DataType(DataType.Password)]
+
         [Compare("Password",ErrorMessage = "Parolalarınız Uyuşmuyor.")]
         public string RePassword { get; set; }
     }

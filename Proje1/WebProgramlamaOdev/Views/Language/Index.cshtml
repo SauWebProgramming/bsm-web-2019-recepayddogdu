@@ -1,0 +1,17 @@
+﻿@using System.Globalization
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container">
+        <h1>@WebProgramlamaOdev.Resources.HomeTexts.V_L_I_DiliniziSeciniz</h1>
+
+
+        <ul>
+            <li>@Html.ActionLink("Türkçe", "Change", "Language", new { LanguageAbbrevation = "tr" }, null)</li>
+            <li>@Html.ActionLink("English", "Change", "Language", new { LanguageAbbrevation = "en" }, null)</li>
+            <li>@DateTime.Now.ToString()</li>
+        </ul>
+    </div>
+

@@ -61,6 +61,15 @@ namespace WebProgramlamaOdev.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kategori Adı.
+        /// </summary>
+        public static string E_C_KategoriAdi {
+            get {
+                return ResourceManager.GetString("E_C_KategoriAdi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Adres.
         /// </summary>
         public static string V_A_D_adres {
@@ -772,6 +781,15 @@ namespace WebProgramlamaOdev.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dilinizi Seçiniz.
+        /// </summary>
+        public static string V_L_I_DiliniziSeciniz {
+            get {
+                return ResourceManager.GetString("V_L_I_DiliniziSeciniz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Adres.
         /// </summary>
         public static string V_O_D_adres {
@@ -1227,6 +1245,15 @@ namespace WebProgramlamaOdev.Resources {
         public static string V_S_L_AnaSayfa {
             get {
                 return ResourceManager.GetString("V_S_L_AnaSayfa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dil Seçenekleri.
+        /// </summary>
+        public static string V_S_L_Dil {
+            get {
+                return ResourceManager.GetString("V_S_L_Dil", resourceCulture);
             }
         }
         

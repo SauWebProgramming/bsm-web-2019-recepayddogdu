@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="E_C_KategoriAdi" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
   <data name="V_A_D_adres" xml:space="preserve">
     <value>Address</value>
   </data>
@@ -354,6 +357,9 @@
   <data name="V_H_L_urun bulundu" xml:space="preserve">
     <value>Products Found.</value>
   </data>
+  <data name="V_L_I_DiliniziSeciniz" xml:space="preserve">
+    <value>Select Your Language</value>
+  </data>
   <data name="V_O_D_adres" xml:space="preserve">
     <value>Address</value>
   </data>
@@ -516,10 +522,16 @@
   <data name="V_S_L_AnaSayfa" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="V_S_L_Dil" xml:space="preserve">
+    <value>Language Options</value>
+  </data>
   <data name="V_S_L_Urunler" xml:space="preserve">
     <value>Products</value>
   </data>
   <data name="V_S_L_YonetimPaneli" xml:space="preserve">
     <value>Admin Panel</value>
+  </data>
+  <data name="V_S_P_UrunuIncele" xml:space="preserve">
+    <value>View Product</value>
   </data>
 </root>
