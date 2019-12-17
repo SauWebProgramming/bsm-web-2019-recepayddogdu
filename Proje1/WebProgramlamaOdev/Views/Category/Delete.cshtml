@@ -6,9 +6,9 @@
 
 }
     <div class="container pb-5">
-        <h2>Bu kategoriyi silmek istediğinizden emin misiniz?</h2>
+        <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_Del_h2Baslik</h2>
 
-       
+        
         <div>
             
             <hr />
@@ -36,8 +36,8 @@
                 @Html.AntiForgeryToken()
 
                 <div class="form-actions no-color">
-                    <input type="submit" value="Sil" class="btn btn-danger" /> |
-                    @Html.ActionLink("Kategori Listesine Geri Dön", "Index",null,new{@class="btn btn-secondary "})
+                    <input type="submit" value=@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_Del_Sil class="btn btn-danger" /> |
+                    @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_Del_KategoriDon, "Index",null,new{@class="btn btn-secondary "})
                 </div>
             }
         </div>

@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Yönetim Paneli</a>
+            <a class="navbar-brand" href="#">@WebProgramlamaOdev.Resources.HomeTexts.V_S_AL_YonetimPaneli</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,19 +26,23 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="/Product">Ürün <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/Product">@WebProgramlamaOdev.Resources.HomeTexts.V_S_AL_Urun <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Category">Kategori</a>
+                        <a class="nav-link" href="/Category">@WebProgramlamaOdev.Resources.HomeTexts.V_S_AL_Kategori</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Order">Siparişler</a>
+                        <a class="nav-link" href="/Order">@WebProgramlamaOdev.Resources.HomeTexts.V_S_AL_Siparisler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home">@WebProgramlamaOdev.Resources.HomeTexts.V_S_AL_AnaSayfa</a>
                     </li>
 
                 </ul>
                 <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder=@WebProgramlamaOdev.Resources.HomeTexts.V_S_AL_pc_Arama aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">@WebProgramlamaOdev.Resources.HomeTexts.V_S_AL_Arama</button>
                 </form>
             </div>
         </div>
@@ -47,13 +51,23 @@
 
     @RenderBody()
 
-    <footer class="footer">
-        <div class="container text-center">
-            <span class="text-muted">
-                <a href="https://instagram.com/recepayddogdu"><i class="fab fa-instagram" style="font-size: 48px;"></i></a>
-            </span>
-        </div>
-    </footer>
+<footer style="position:absolute; bottom:0; width:100%; height:60px; ">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="col-md-10 text-info" style="float:left">
+        <strong>Copyright &copy; BittiBitiyor</strong>
+    </div>
+    <div class="col-md-2" style="float:right">
+
+        <a href="http://www.sakarya.edu.tr/" target="_blank" class="fa fa-facebook"></a>
+        <a href="http://www.sakarya.edu.tr/" target="_blank" class="fa fa-twitter"></a>
+        <a href="http://www.sakarya.edu.tr/" target="_blank" class="fa fa-google"></a>
+        <a href="http://www.sakarya.edu.tr/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="http://www.sakarya.edu.tr/" target="_blank" class="fa fa-youtube"></a>
+        <a href="http://www.sakarya.edu.tr/" target="_blank" class="fa fa-instagram"></a>
+    </div>
+</footer>
 
 
 

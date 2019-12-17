@@ -8,7 +8,7 @@
 
 <div class="container pb-5">
 
-    <h2> Kullanıcı Girişi</h2>
+    <h2> @WebProgramlamaOdev.Resources.HomeTexts.V_A_L_h2Baslik</h2>
     <hr />
 
 
@@ -29,7 +29,7 @@
             </div>
 
 
-            <div class="form-group">
+            <div class="form-group" >
                 @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
@@ -44,7 +44,7 @@
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Giriş" class="btn btn-success" />
+                    <input type="submit" value=@WebProgramlamaOdev.Resources.HomeTexts.V_A_L_Giris class="btn btn-success" />
 
                 </div>
             </div>

@@ -10,8 +10,8 @@ namespace WebProgramlamaOdev.Entity
     {
 
         [Display(Name = "Onay Bekleniyor")]
-        Waiting,
+        OnayBekleniyor,
         [Display(Name = "Tamamlandı")]
-        Completed
+        Tamamlandi
     }
 }

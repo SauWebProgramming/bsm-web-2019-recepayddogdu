@@ -30,8 +30,8 @@
 <div class="container mb-5">
     <div class="row">
         <div class="col-md-12">
-            <h2>Sipariş Bilgileriniz</h2>
-            <p>Lütfen sipariş bilgilerinizi doldurunuz.</p>
+            <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_h2Baslik</h2>
+            <p>@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_p</p>
             <hr />
 
             @using (Html.BeginForm())
@@ -39,7 +39,7 @@
                 @Html.ValidationSummary()
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Kullanıcı Adı</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_KullaniciAdi</label>
                     <div class="col-sm-6">
                         <span class="badge badge-danger" style="font-size: 14px;">
                             @User.Identity.Name
@@ -48,42 +48,42 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Adres Tanımı</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_AdresTanimi</label>
                     <div class="col-sm-6">
                         @Html.TextBoxFor(x => x.AdresBasligi, new { @class = "form-control" })
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Adres</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_Adres</label>
                     <div class="col-sm-6">
                         @Html.TextBoxFor(x => x.Adres, new { @class = "form-control" })
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Şehir</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_Sehir</label>
                     <div class="col-sm-6">
                         @Html.TextBoxFor(x => x.Sehir, new { @class = "form-control" })
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Semt</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_Semt</label>
                     <div class="col-sm-6">
                         @Html.TextBoxFor(x => x.Semt, new { @class = "form-control" })
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Mahalle</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_Mahalle</label>
                     <div class="col-sm-6">
                         @Html.TextBoxFor(x => x.Mahalle, new { @class = "form-control" })
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Posta Kodu</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_PostaKodu</label>
                     <div class="col-sm-6">
                         @Html.TextBoxFor(x => x.PostaKodu, new { @class = "form-control" })
                     </div>
@@ -92,7 +92,7 @@
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
                     <div class="col-sm-6">
-                        <button type="submit" class="btn btn-success">Siparişi Onayla</button>
+                        <button type="submit" class="btn btn-success">@WebProgramlamaOdev.Resources.HomeTexts.V_C_C_SiparisiOnayla</button>
                     </div>
                 </div>
 

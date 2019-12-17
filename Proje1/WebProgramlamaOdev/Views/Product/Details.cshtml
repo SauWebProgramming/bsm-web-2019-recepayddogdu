@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+    <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_P_Det_h2Baslik</h2>
 
 <div>
-    <h4>Ürün</h4>
+    <h4>@WebProgramlamaOdev.Resources.HomeTexts.V_P_Det_h4Baslik</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -77,6 +77,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_P_Det_Duzenle, "Edit", new { id = Model.Id }) |
+    @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_P_Det_ListeyeDon, "Index")
 </p>

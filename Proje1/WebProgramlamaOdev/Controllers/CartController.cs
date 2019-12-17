@@ -92,7 +92,7 @@ namespace WebProgramlamaOdev.Controllers
             order.OrderNumber = "A" + (new Random()).Next(11111, 99999).ToString();
             order.Total = cart.Total();
             order.OrderDate = DateTime.Now;
-            order.OrderState = EnumOrderState.Waiting;
+            order.OrderState = EnumOrderState.OnayBekleniyor;
             order.Username = User.Identity.Name;
 
 

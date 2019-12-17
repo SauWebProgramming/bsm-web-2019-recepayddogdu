@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <h2>Alışveriş Sepeti</h2>
+            <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_C_I_h2Baslik</h2>
             <hr />
 
             @if (Model.CartLines.Count > 0)
@@ -16,10 +16,10 @@
                     <thead>
                     <tr>
                         <th></th>
-                        <th>Miktar</th>
-                        <th>Ürün Adı</th>
-                        <th>Fiyat</th>
-                        <th>Toplam</th>
+                        <th>@WebProgramlamaOdev.Resources.HomeTexts.V_C_I_Miktar</th>
+                        <th>@WebProgramlamaOdev.Resources.HomeTexts.V_C_I_UrunAdi</th>
+                        <th>@WebProgramlamaOdev.Resources.HomeTexts.V_C_I_Fiyat</th>
+                        <th>@WebProgramlamaOdev.Resources.HomeTexts.V_C_I_Toplam</th>
                         <td></td>
                     </tr>
                     </thead>
@@ -48,7 +48,7 @@
                                     @Html.Hidden("Id", item.Product.Id)
                                     <button type="submit" class="btn btn-danger">
                                         <i class="fa fa-trash-o" ></i>
-                                        Sil
+                                        @WebProgramlamaOdev.Resources.HomeTexts.V_C_I_Sil
                                     </button>
                                 }
                             </td>
@@ -68,12 +68,11 @@
                   
                     <a href="/Home/List" class="btn btn-primary">
                         <i class="fa fa-angle-double-left"></i>
-                        Alışveriş Devam Et
+                        @WebProgramlamaOdev.Resources.HomeTexts.V_C_I_DevamEt
                     </a>
                     <a href="/Cart/Checkout" class="btn btn-primary">
                         <i class="fas fa-check"></i>
-                        Alışverişi Tamamla
-
+                        @WebProgramlamaOdev.Resources.HomeTexts.V_C_I_Tamamla
                     </a>
                 </div>
             }
@@ -81,7 +80,7 @@
             {
                 <div class="alert alert-warning" role="alert">
                     <i class="fa fa-exclamation-circle " style="font-size: 20px;"></i>
-                    Alışveriş Sepetinizide Ürün Bulunmamaktadır.
+                    @WebProgramlamaOdev.Resources.HomeTexts.V_C_I_UrunBulunmamakta
                 </div>
             }
 

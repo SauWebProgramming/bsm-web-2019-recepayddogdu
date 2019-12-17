@@ -9,40 +9,40 @@
     <div class="row">
         <div class="col-md-12">
 
-            <h2>Sipariş Detay Bilgileri</h2>
+            <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_h2Baslik</h2>
             <hr />
 
             <dl class="row">
 
-                <dt class="col-sm-3">Order State</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_SiparisDurumu</dt>
                 <dd class="col-sm-9">
-                    @if (Model.OrderState == EnumOrderState.Waiting)
+                    @if (Model.OrderState == EnumOrderState.OnayBekleniyor)
                     {
-                        <span class="badge-danger">Onay Bekliyor</span>
+                    <span class="badge-danger">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_OnayBekliyor</span>
                     }
-                    else if (Model.OrderState == EnumOrderState.Completed)
+                    else if (Model.OrderState == EnumOrderState.Tamamlandi)
                     {
-                        <span class="badge-success">Sipariş Tamamlandı.</span>
+                <span class="badge-success">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_Tamamlandi</span>
                     }
                 </dd>
 
-                <dt class="col-sm-3">Order Id</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_SiparisId</dt>
                 <dd class="col-sm-9">@Model.OrderId</dd>
 
-                <dt class="col-sm-3">Order Number</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_SiparisNo</dt>
                 <dd class="col-sm-9">@Model.OrderNumber</dd>
 
-                <dt class="col-sm-3">Total</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_Toplam</dt>
                 <dd class="col-sm-9">
                     <i class="fa fa-try" aria-hidden="true"></i>
                     @Model.Total
                 </dd>
 
-                <dt class="col-sm-3">Sipariş Tarihi</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_SiparisTarihi</dt>
                 <dd class="col-sm-9">@Model.OrderDate</dd>
 
 
-                <dt class="col-sm-3">Adres</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_adres</dt>
                 <dd class="col-sm-9">
                     @Model.AdresBasligi
                     <hr />
@@ -53,16 +53,16 @@
                     @Model.PostaKodu
                 </dd>
 
-                <dt class="col-sm-3">Ürünler</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_Urunler</dt>
                 <dd class="col-sm-9">
                     <table class="table table-bordered">
 
                         <thead>
                             <tr>
-                                <th>Image</th>
-                                <th style="width: 45%;">Product Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
+                                <th>@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_Resim</th>
+                                <th style="width: 45%;">@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_UrunAdi</th>
+                                <th>@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_Miktar</th>
+                                <th>@WebProgramlamaOdev.Resources.HomeTexts.V_A_D_Fiyat</th>
                                 <th style="width: 10%;"></th>
                             </tr>
                         </thead>
@@ -87,7 +87,7 @@
                                     <td>
                                         <a href="/Home/Details/@item.ProductId" class="btn btn-primary btn-sm" target="_blank">
                                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                            Ürün Detay
+                                            @WebProgramlamaOdev.Resources.HomeTexts.V_A_D_UrunDetay
                                         </a>
                                     </td>
                                 </tr>

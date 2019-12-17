@@ -6,7 +6,7 @@
 }
 
 <div class="container pb-5 ">
-    <h2>Ürün Güncelle</h2>
+    <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_P_E_h2Baslik</h2>
     <hr/>
 
     @using (Html.BeginForm())
@@ -89,8 +89,8 @@
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Kaydet" class="btn btn-success" />
-                    @Html.ActionLink("Kategori Listesine Geri Dön", "Index",null,new { @class = "btn btn-secondary" })
+                    <input type="submit" value=@WebProgramlamaOdev.Resources.HomeTexts.V_P_E_Kaydet class="btn btn-success" />
+                    @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_P_E_ListeyeDon, "Index",null,new { @class = "btn btn-secondary" })
                 </div>
             </div>
         </div>

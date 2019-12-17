@@ -6,39 +6,40 @@
 
 }
 
-<div class="container pb-5">
+    <div class="container pb-5">
 
-<h2>Kategori Listesi</h2>
+        <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_I_h2Baslik</h2>
 
-<p>
-    @Html.ActionLink("Yeni Kategori", "Create",null,new {@class="btn btn-success"})
-</p>
-    <table class="table table-bordered table-striped">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th style="width: 145px; "></th>
-        </tr>
-
-        @foreach (var item in Model) {
+        <p>
+            @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_I_YeniKategori, "Create", null, new { @class = "btn btn-success" })
+        </p>
+        <table class="table table-bordered table-striped">
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.ActionLink("Güncelle", "Edit", new { id=item.Id },new {@class="btn btn-dark btn-sm"}) |
-                    @Html.ActionLink("Sil", "Delete", new { id=item.Id },new {@class="btn btn-danger btn-sm"})
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th style="width: 145px; "></th>
             </tr>
-        }
 
-    </table>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_I_Guncelle, "Edit", new { id = item.Id }, new { @class = "btn btn-dark btn-sm" }) |
+                        @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_I_Sil, "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+                    </td>
+                </tr>
+            }
 
-</div>
+        </table>
+
+    </div>

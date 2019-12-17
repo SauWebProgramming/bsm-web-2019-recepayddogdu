@@ -6,10 +6,10 @@
 }
 
 <div class="container pb-5">
-    <h2>Ürünler</h2>
+    <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_P_I_h2Baslik</h2>
 
     <p>
-        @Html.ActionLink("Yeni Ürün", "Create",null,new {@class="btn btn-success"})
+        @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_P_I_YeniUrun, "Create",null,new {@class="btn btn-success"})
     </p>
     <table class="table table-bordered table-striped">
         <tr>
@@ -45,16 +45,16 @@
                <td>
                    @if (item.IsHome)
                    {
-                    <label class="badge badge-success">
-                        <i class="fa fa-check-circle"></i>
-                        Evet
-                    </label>
+                   <label class="badge badge-success">
+                       <i class="fa fa-check-circle"></i>
+                       @WebProgramlamaOdev.Resources.HomeTexts.V_P_I_Evet
+                   </label>
                    }
                    else
                    {
                        <label class="badge badge-danger">
                            <i class=" fa fa-times-circle-o">
-                               <strong> Hayır</strong>
+                               <strong> @WebProgramlamaOdev.Resources.HomeTexts.V_P_I_Hayir</strong>
                            </i>
                        </label>
                    }
@@ -62,22 +62,22 @@
                 <td>
                     @if (item.IsApproved)
                     {
-                        <label class="badge badge-success">
-                            <i class="fa fa-check-circle"></i>
-                            Evet
-                        </label>
+                    <label class="badge badge-success">
+                        <i class="fa fa-check-circle"></i>
+                        @WebProgramlamaOdev.Resources.HomeTexts.V_P_I_Evet
+                    </label>
                     }
                     else
                     {
                         <label class="badge badge-danger">
                             <i class=" fa fa-times-circle-o">
-                                <strong> Hayır</strong>
+                                <strong> @WebProgramlamaOdev.Resources.HomeTexts.V_P_I_Hayir</strong>
                             </i>
                         </label>
                     }
                 </td><td>
-                    @Html.ActionLink("Güncelle", "Edit", new { id=item.Id },new { @class = "btn btn-dark btn-sm" }) 
-                    @Html.ActionLink("Sil", "Delete", new { id=item.Id }, new { @class = "btn btn-danger btn-sm" })
+                    @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_P_I_Guncelle, "Edit", new { id=item.Id },new { @class = "btn btn-dark btn-sm" }) 
+                    @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_P_I_Sil, "Delete", new { id=item.Id }, new { @class = "btn btn-danger btn-sm" })
                 </td>
             </tr>
         }

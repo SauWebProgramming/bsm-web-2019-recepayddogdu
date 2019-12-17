@@ -6,7 +6,7 @@
 
 }
 <div class="container pb-5">
-    <h2>Bu ürünü silmek istediğinizden emin misiniz?</h2>
+    <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_P_Del_h2Baslik</h2>
     <hr/>
    
     <div>
@@ -31,8 +31,8 @@
             @Html.AntiForgeryToken()
 
             <div class="form-actions no-color">
-                <input type="submit" value="Sil" class="btn btn-danger" /> |
-                @Html.ActionLink("Kategori Listesine Geri Dön ", "Index",null,new { @class = "btn btn-secondary" })
+                <input type="submit" value=@WebProgramlamaOdev.Resources.HomeTexts.V_P_Del_Sil class="btn btn-danger" /> |
+                @Html.ActionLink(@WebProgramlamaOdev.Resources.HomeTexts.V_P_Del_ListeyeDon, "Index",null,new { @class = "btn btn-secondary" })
             </div>
         }
     </div>

@@ -21,9 +21,11 @@ namespace WebProgramlamaOdev.Entity
         [DisplayName("Stok")]
         public int Stock { get; set; }
 
-        
+        [DisplayName("Resim")]
         public string Image { get; set; }
+        [DisplayName("Anasayfada mı?")]
         public bool IsHome{ get; set; }
+        [DisplayName("Onaylı mı?")]
         public bool IsApproved { get; set; }
 
 

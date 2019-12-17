@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <h2>Sipariş Detay Bilgileri</h2>
+            <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_h2Baslik</h2>
             <hr />
             @if (TempData["message"] != null)
             {
@@ -24,11 +24,11 @@
             <dl class="row">
 
 
-                <dt class="col-sm-3">Username</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_KullaniciAdi</dt>
                 <dd class="col-sm-9">@Model.UserName
                 <dd>
 
-                <dt class="col-sm-3">Order State</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_UrunDurumu</dt>
                 <dd class="col-sm-9"> 
 
                     @using (Html.BeginForm("UpdateOrderState", "Order", FormMethod.Post))
@@ -37,33 +37,33 @@
 
                         <dl class="row">
                             <dt class="col-sm-8">
-                                @Html.EnumDropDownListFor(i => i.OrderState, "Select Order State", new { @class = "form-control" })
+                                @Html.EnumDropDownListFor(i => i.OrderState, @WebProgramlamaOdev.Resources.HomeTexts.V_O_D_UrunDurumuSecin, new { @class = "form-control" })
                             </dt>
                             <dd class="col-sm-4">
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_Guncelle</button>
                             </dd>
                         </dl>
                     }
 
                 </dd>
 
-                <dt class="col-sm-3">Sipariş Id</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_SiparisId</dt>
                 <dd class="col-sm-9">@Model.OrderId</dd>
 
-                <dt class="col-sm-3">Sipariş Numarası</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_SiparisNo</dt>
                 <dd class="col-sm-9">@Model.OrderNumber</dd>
 
-                <dt class="col-sm-3">Tutar</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_Tutar</dt>
                 <dd class="col-sm-9">
                     <i class="fa fa-try" aria-hidden="true"></i>
                     @Model.Total
                 </dd>
 
-                <dt class="col-sm-3">Sipariş Tarihi</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_SiparisTarihi</dt>
                 <dd class="col-sm-9">@Model.OrderDate</dd>
 
 
-                <dt class="col-sm-3">Adres</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_adres</dt>
                 <dd class="col-sm-9">
                     @Model.AdresBasligi
                     <hr />
@@ -74,16 +74,16 @@
                     @Model.PostaKodu
                 </dd>
 
-                <dt class="col-sm-3">Ürünler</dt>
+                <dt class="col-sm-3">@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_Urunler</dt>
                 <dd class="col-sm-9">
                     <table class="table table-bordered">
 
                         <thead>
                             <tr>
-                                <th>Image</th>
+                                <th>@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_Resim</th>
                                 <th style="width: 45%;">Ürün Adı</th>
-                                <th>Miktar</th>
-                                <th>Fiyat</th>
+                                <th>@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_Miktar</th>
+                                <th>@WebProgramlamaOdev.Resources.HomeTexts.V_O_D_Fiyat</th>
                                 <th style="width: 10%;"></th>
                             </tr>
                         </thead>
@@ -108,7 +108,7 @@
                                     <td>
                                         <a href="/Home/Details/@item.ProductId" class="btn btn-primary btn-sm" target="_blank">
                                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                            Ürün Detay
+                                            @WebProgramlamaOdev.Resources.HomeTexts.V_O_D_UrunDetay
                                         </a>
                                     </td>
                                 </tr>

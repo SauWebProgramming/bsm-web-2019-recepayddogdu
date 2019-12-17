@@ -8,15 +8,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Sipariş Bilgileriniz</h2>
+            <h2>@WebProgramlamaOdev.Resources.HomeTexts.V_A_I_h2Baslik</h2>
             <hr />
 
             <table class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th>Sipariş Numarası</th>
-                    <th>Sipariş Tarihi</th>
-                    <th>Tutar</th>
+                    <th>@WebProgramlamaOdev.Resources.HomeTexts.V_A_I_SiparisNo</th>
+                    <th>@WebProgramlamaOdev.Resources.HomeTexts.V_A_I_SiparisTarihi</th>
+                    <th>@WebProgramlamaOdev.Resources.HomeTexts.V_A_I_Tutar</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -34,7 +34,7 @@
                         </td>
                         <td>@item.OrderState</td>
                         <td>
-                            @Html.ActionLink("Details","Details",new {id=@item.Id},new {@class="btn btn-primary"})
+                            @Html.ActionLink(WebProgramlamaOdev.Resources.HomeTexts.V_A_I_Detaylar,"Details",new {id=@item.Id},new {@class="btn btn-primary"})
                         </td>
                     </tr>
                 }

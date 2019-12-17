@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="V_A_D_adres" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="V_A_D_Fiyat" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="V_A_D_h2Baslik" xml:space="preserve">
+    <value>Sipariş Detay Bilgileri</value>
+  </data>
+  <data name="V_A_D_Miktar" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="V_A_D_OnayBekliyor" xml:space="preserve">
+    <value>Onay Bekliyor</value>
+  </data>
+  <data name="V_A_D_Resim" xml:space="preserve">
+    <value>Resim</value>
+  </data>
+  <data name="V_A_D_SiparisDurumu" xml:space="preserve">
+    <value>Sipariş Durumu</value>
+  </data>
+  <data name="V_A_D_SiparisId" xml:space="preserve">
+    <value>Sipariş Id</value>
+  </data>
+  <data name="V_A_D_SiparisNo" xml:space="preserve">
+    <value>Sipariş Numarası</value>
+  </data>
+  <data name="V_A_D_SiparisTarihi" xml:space="preserve">
+    <value>Sipariş Tarihi</value>
+  </data>
+  <data name="V_A_D_Tamamlandi" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="V_A_D_Toplam" xml:space="preserve">
+    <value>Toplam</value>
+  </data>
+  <data name="V_A_D_UrunAdi" xml:space="preserve">
+    <value>Ürün Adı</value>
+  </data>
+  <data name="V_A_D_UrunDetay" xml:space="preserve">
+    <value>Ürün Detay</value>
+  </data>
+  <data name="V_A_D_Urunler" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="V_A_I_Detaylar" xml:space="preserve">
+    <value>Detaylar</value>
+  </data>
+  <data name="V_A_I_h2Baslik" xml:space="preserve">
+    <value>Sipariş Bilgileriniz</value>
+  </data>
+  <data name="V_A_I_SiparisNo" xml:space="preserve">
+    <value>Sipariş Numarası</value>
+  </data>
+  <data name="V_A_I_SiparisTarihi" xml:space="preserve">
+    <value>Sipariş Tarihi</value>
+  </data>
+  <data name="V_A_I_Tutar" xml:space="preserve">
+    <value>Tutar</value>
+  </data>
+  <data name="V_A_L_Giris" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="V_A_L_h2Baslik" xml:space="preserve">
+    <value>Kullanıcı Girişi</value>
+  </data>
+  <data name="V_A_R_h2Baslik" xml:space="preserve">
+    <value>Yeni Kullanıcı</value>
+  </data>
+  <data name="V_A_R_KullaniciOlustur" xml:space="preserve">
+    <value>Kullanıcı Oluştur</value>
+  </data>
+  <data name="V_Cat_C_btnKaydet" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="V_Cat_C_h2Baslik" xml:space="preserve">
+    <value>Yeni Kategori</value>
+  </data>
+  <data name="V_Cat_Del_h2Baslik" xml:space="preserve">
+    <value>Bu kategoriyi silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="V_Cat_Del_KategoriDon" xml:space="preserve">
+    <value>Kategori Listesine Geri Dön</value>
+  </data>
+  <data name="V_Cat_Del_Sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="V_Cat_Det_Duzenle" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="V_Cat_Det_h2Baslik" xml:space="preserve">
+    <value>Detaylar</value>
+  </data>
+  <data name="V_Cat_Det_h4Baslik" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="V_Cat_Det_ListeyeDon" xml:space="preserve">
+    <value>Alışveriş Listesine Geri Dön</value>
+  </data>
+  <data name="V_Cat_E_h2Baslik" xml:space="preserve">
+    <value>Kategori Güncelle</value>
+  </data>
+  <data name="V_Cat_E_Kaydet" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="V_Cat_E_ListeyeDon" xml:space="preserve">
+    <value>Kategori Listesine Geri Dön</value>
+  </data>
+  <data name="V_Cat_I_Guncelle" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="V_Cat_I_h2Baslik" xml:space="preserve">
+    <value>Kategori Listesi</value>
+  </data>
+  <data name="V_Cat_I_Sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="V_Cat_I_YeniKategori" xml:space="preserve">
+    <value>Yeni Kategori</value>
+  </data>
+  <data name="V_C_Co_btnPrimary" xml:space="preserve">
+    <value>Alışveriş Devam Et</value>
+  </data>
+  <data name="V_C_Co_h4Baslik" xml:space="preserve">
+    <value>Siparişiniz En Yakın Zamanda Kargoya Verilecek</value>
+  </data>
+  <data name="V_C_Co_SiparisTamamlandi" xml:space="preserve">
+    <value>Sipariş Tamamlandı!</value>
+  </data>
+  <data name="V_C_C_Adres" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="V_C_C_AdresTanimi" xml:space="preserve">
+    <value>Adres Tanımı</value>
+  </data>
+  <data name="V_C_C_h2Baslik" xml:space="preserve">
+    <value>Sipariş Bilgileriniz</value>
+  </data>
+  <data name="V_C_C_KullaniciAdi" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="V_C_C_Mahalle" xml:space="preserve">
+    <value>Mahalle</value>
+  </data>
+  <data name="V_C_C_p" xml:space="preserve">
+    <value>Lütfen sipariş bilgilerinizi doldurunuz.</value>
+  </data>
+  <data name="V_C_C_PostaKodu" xml:space="preserve">
+    <value>Posta Kodu</value>
+  </data>
+  <data name="V_C_C_Sehir" xml:space="preserve">
+    <value>Şehir</value>
+  </data>
+  <data name="V_C_C_Semt" xml:space="preserve">
+    <value>Semt</value>
+  </data>
+  <data name="V_C_C_SiparisiOnayla" xml:space="preserve">
+    <value>Siparişi Onayla</value>
+  </data>
+  <data name="V_C_I_DevamEt" xml:space="preserve">
+    <value>Alışverişe Devam Et</value>
+  </data>
+  <data name="V_C_I_Fiyat" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="V_C_I_h2Baslik" xml:space="preserve">
+    <value>Alışveriş Sepeti</value>
+  </data>
+  <data name="V_C_I_Miktar" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="V_C_I_Sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="V_C_I_Tamamla" xml:space="preserve">
+    <value>Alışverişi Tamamla</value>
+  </data>
+  <data name="V_C_I_Toplam" xml:space="preserve">
+    <value>Toplam</value>
+  </data>
+  <data name="V_C_I_UrunAdi" xml:space="preserve">
+    <value>Ürün Adı</value>
+  </data>
+  <data name="V_C_I_UrunBulunmamakta" xml:space="preserve">
+    <value>Alışveriş Sepetinizide Ürün Bulunmamaktadır.</value>
+  </data>
+  <data name="V_H_D_Aciklama" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="V_H_D_DegerlendirmeYazin" xml:space="preserve">
+    <value>Bir değerlendirme yazın!</value>
+  </data>
+  <data name="V_H_D_Inceleme" xml:space="preserve">
+    <value>İnceleme</value>
+  </data>
+  <data name="V_H_D_OdemeMetodlari" xml:space="preserve">
+    <value>Ödeme Metodları</value>
+  </data>
+  <data name="V_H_D_p_Aciklama" xml:space="preserve">
+    <value>Ülkemizde gerçekleştirdiği büyük reklam kampanyası ile bilinirliğini artıran Oppo'nun yeni modellerinden Oppo Reno2 Z modelinin incelemesi ile karşınızdayız. Fiyat segmentindeki rakipleri ile kıyaslandığında oldukça…</value>
+  </data>
+  <data name="V_H_D_p_Inceleme" xml:space="preserve">
+    <value>Ülkemizde gerçekleştirdiği büyük reklam kampanyası ile bilinirliğini artıran Oppo'nun yeni modellerinden Oppo Reno2 Z modelinin incelemesi ile karşınızdayız. Fiyat segmentindeki rakipleri ile kıyaslandığında oldukça…</value>
+  </data>
+  <data name="V_H_D_p_OdemeMetod" xml:space="preserve">
+    <value>Kredi kartına 12 taksit. Kapıda ödeme.</value>
+  </data>
+  <data name="V_H_D_SepeteEkle" xml:space="preserve">
+    <value>Sepete Ekle</value>
+  </data>
+  <data name="V_H_D_Stokta" xml:space="preserve">
+    <value>Stokta</value>
+  </data>
+  <data name="V_H_D_StoktaYok" xml:space="preserve">
+    <value>Stokta Yok</value>
+  </data>
+  <data name="V_H_G_TumKategoriler" xml:space="preserve">
+    <value>Tüm Kategoriler</value>
+  </data>
+  <data name="V_H_I_h1Baslik" xml:space="preserve">
+    <value>Hoşgeldiniz!</value>
+  </data>
+  <data name="V_H_I_p1" xml:space="preserve">
+    <value>Teknolojide sınır tanımıyoruz!</value>
+  </data>
+  <data name="V_H_I_p2" xml:space="preserve">
+    <value>Masaüstü bilgisayar, dizüstü bilgisayar, cep telefonu, televizyon, tablet, fotoğraf makinesi ve binlerce teknoloji ürünü Vatan Bilgisayar'da.</value>
+  </data>
+  <data name="V_H_L_adet" xml:space="preserve">
+    <value>adet</value>
+  </data>
+  <data name="V_H_L_Bulunamadi" xml:space="preserve">
+    <value>Bu Kategoride bir ürün bulunamadı.</value>
+  </data>
+  <data name="V_H_L_urun bulundu" xml:space="preserve">
+    <value>ürün bulundu.</value>
+  </data>
+  <data name="V_O_D_adres" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="V_O_D_Fiyat" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="V_O_D_Guncelle" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="V_O_D_h2Baslik" xml:space="preserve">
+    <value>Sipariş Detay Bilgileri</value>
+  </data>
+  <data name="V_O_D_KullaniciAdi" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="V_O_D_Miktar" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="V_O_D_Resim" xml:space="preserve">
+    <value>Resim</value>
+  </data>
+  <data name="V_O_D_SiparisId" xml:space="preserve">
+    <value>Sipariş Id</value>
+  </data>
+  <data name="V_O_D_SiparisNo" xml:space="preserve">
+    <value>Sipariş Numarası</value>
+  </data>
+  <data name="V_O_D_SiparisTarihi" xml:space="preserve">
+    <value>Sipariş Tarihi</value>
+  </data>
+  <data name="V_O_D_Tutar" xml:space="preserve">
+    <value>Tutar</value>
+  </data>
+  <data name="V_O_D_UrunAdi" xml:space="preserve">
+    <value>Ürün Adı</value>
+  </data>
+  <data name="V_O_D_UrunDetay" xml:space="preserve">
+    <value>Ürün Detay</value>
+  </data>
+  <data name="V_O_D_UrunDurumu" xml:space="preserve">
+    <value>Ürün Durumu</value>
+  </data>
+  <data name="V_O_D_UrunDurumuSecin" xml:space="preserve">
+    <value>Ürün Durumunu Seçin</value>
+  </data>
+  <data name="V_O_D_Urunler" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="V_O_I_Detaylar" xml:space="preserve">
+    <value>Detaylar</value>
+  </data>
+  <data name="V_O_I_h2Baslik" xml:space="preserve">
+    <value>Siparişler</value>
+  </data>
+  <data name="V_O_I_id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="V_O_I_SiparisDurumu" xml:space="preserve">
+    <value>Sipariş Durumu</value>
+  </data>
+  <data name="V_O_I_SiparisNo" xml:space="preserve">
+    <value>Sipariş Numarası</value>
+  </data>
+  <data name="V_O_I_SiparisTarihi" xml:space="preserve">
+    <value>Sipariş Tarihi</value>
+  </data>
+  <data name="V_O_I_Tutar" xml:space="preserve">
+    <value>Tutar</value>
+  </data>
+  <data name="V_O_I_UrunStok" xml:space="preserve">
+    <value>Ürün Stok</value>
+  </data>
+  <data name="V_P_C_h2Baslik" xml:space="preserve">
+    <value>Yeni Ürün</value>
+  </data>
+  <data name="V_P_C_ListeyeDon" xml:space="preserve">
+    <value>Alışveriş Listesine Geri Dön</value>
+  </data>
+  <data name="V_P_Del_h2Baslik" xml:space="preserve">
+    <value>Bu ürünü silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="V_P_Del_ListeyeDon" xml:space="preserve">
+    <value>Kategori Listesine Geri Dön</value>
+  </data>
+  <data name="V_P_Del_Sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="V_P_Det_Duzenle" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="V_P_Det_h2Baslik" xml:space="preserve">
+    <value>Detaylar</value>
+  </data>
+  <data name="V_P_Det_h4Baslik" xml:space="preserve">
+    <value>Ürün</value>
+  </data>
+  <data name="V_P_Det_ListeyeDon" xml:space="preserve">
+    <value>Listeye geri dön</value>
+  </data>
+  <data name="V_P_E_h2Baslik" xml:space="preserve">
+    <value>Ürün Güncelle</value>
+  </data>
+  <data name="V_P_E_Kaydet" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="V_P_E_ListeyeDon" xml:space="preserve">
+    <value>Kategori Listesine Geri Dön</value>
+  </data>
+  <data name="V_P_I_Evet" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="V_P_I_Guncelle" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="V_P_I_h2Baslik" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="V_P_I_Hayir" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="V_P_I_Hayir2" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="V_P_I_Sil" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="V_P_I_YeniUrun" xml:space="preserve">
+    <value>Yeni Ürün</value>
+  </data>
+  <data name="V_S_AL_AnaSayfa" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="V_S_AL_Arama" xml:space="preserve">
+    <value>Arama</value>
+  </data>
+  <data name="V_S_AL_Kategori" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="V_S_AL_pc_Arama" xml:space="preserve">
+    <value>Arama</value>
+  </data>
+  <data name="V_S_AL_Siparisler" xml:space="preserve">
+    <value>Siparişler</value>
+  </data>
+  <data name="V_S_AL_Urun" xml:space="preserve">
+    <value>Ürün</value>
+  </data>
+  <data name="V_S_AL_YonetimPaneli" xml:space="preserve">
+    <value>Yönetim Paneli</value>
+  </data>
+  <data name="V_S_LP_Cikis" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="V_S_LP_Giris" xml:space="preserve">
+    <value>Giriş</value>
+  </data>
+  <data name="V_S_LP_UyeOl" xml:space="preserve">
+    <value>Üye Ol</value>
+  </data>
+  <data name="V_S_L_AnaSayfa" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="V_S_L_Urunler" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="V_S_L_YonetimPaneli" xml:space="preserve">
+    <value>Yönetim Paneli</value>
+  </data>
+  <data name="V_S_P_UrunuIncele" xml:space="preserve">
+    <value>Ürünü İncele</value>
+  </data>
+</root>
