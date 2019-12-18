@@ -143,6 +143,25 @@
     <Content Include="theme\js\holder.min.js" />
     <Content Include="theme\product-details.html" />
     <Content Include="theme\product-list.html" />
+    <Content Include="Upload\1.jpg" />
+    <Content Include="Upload\10.jpg" />
+    <Content Include="Upload\11.jpg" />
+    <Content Include="Upload\12.jpg" />
+    <Content Include="Upload\13.jpg" />
+    <Content Include="Upload\14.jpg" />
+    <Content Include="Upload\15.jpg" />
+    <Content Include="Upload\16.jpg" />
+    <Content Include="Upload\17.jpg" />
+    <Content Include="Upload\18.jpg" />
+    <Content Include="Upload\2.jpg" />
+    <Content Include="Upload\20.jpg" />
+    <Content Include="Upload\3.jpg" />
+    <Content Include="Upload\4.jpg" />
+    <Content Include="Upload\5.jpg" />
+    <Content Include="Upload\6.jpg" />
+    <Content Include="Upload\7.jpg" />
+    <Content Include="Upload\8.jpg" />
+    <Content Include="Upload\9.jpg" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\List.cshtml" />
@@ -231,7 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\HomeTexts.en.resx">
