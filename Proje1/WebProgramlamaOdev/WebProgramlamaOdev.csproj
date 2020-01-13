@@ -143,7 +143,6 @@
     <Content Include="theme\js\holder.min.js" />
     <Content Include="theme\product-details.html" />
     <Content Include="theme\product-list.html" />
-    <Content Include="Upload\1.jpg" />
     <Content Include="Upload\10.jpg" />
     <Content Include="Upload\11.jpg" />
     <Content Include="Upload\12.jpg" />
@@ -155,7 +154,6 @@
     <Content Include="Upload\18.jpg" />
     <Content Include="Upload\2.jpg" />
     <Content Include="Upload\20.jpg" />
-    <Content Include="Upload\3.jpg" />
     <Content Include="Upload\4.jpg" />
     <Content Include="Upload\5.jpg" />
     <Content Include="Upload\6.jpg" />

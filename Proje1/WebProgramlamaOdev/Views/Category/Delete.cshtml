@@ -33,7 +33,8 @@
 
             @using (Html.BeginForm())
             {
-                @Html.AntiForgeryToken()
+                @Html.AntiForgeryToken() /* kullanmamızın sebebi  oluşturduğumuz web sitelerinde gönderilen verinin bizim server dan mı
+                                          * yoksa başka serverdan mı , değilse bunun engellemesini yapmak güvenli tutmak için kullanılır. */
 
                 <div class="form-actions no-color">
                     <input type="submit" value=@WebProgramlamaOdev.Resources.HomeTexts.V_Cat_Del_Sil class="btn btn-danger" /> |

@@ -89,7 +89,7 @@ namespace WebProgramlamaOdev.Controllers
         }
 
         // GET: Category/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int? id) /* Silme isleminin yapildigi alan */
         {
             if (id == null)
             {
